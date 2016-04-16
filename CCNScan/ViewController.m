@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "scanViewController.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    UIButton *btn = [[UIButton alloc]init];
+    btn.frame = CGRectMake(150, 200, 100, 30);
+    btn.backgroundColor = [UIColor redColor];
+    [btn setTitle:@"扫一扫" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+}
+
+- (void)click{
+    scanViewController *scan = [[scanViewController alloc]init];
+    [self.navigationController pushViewController:scan animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

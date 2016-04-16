@@ -16,6 +16,10 @@
 		51C2D7961CBFB04E00C4E099 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51C2D7941CBFB04E00C4E099 /* LaunchScreen.storyboard */; };
 		51C2D7A11CBFB04E00C4E099 /* CCNScanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C2D7A01CBFB04E00C4E099 /* CCNScanTests.m */; };
 		51C2D7AC1CBFB04E00C4E099 /* CCNScanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C2D7AB1CBFB04E00C4E099 /* CCNScanUITests.m */; };
+		51C2D7BA1CBFB68C00C4E099 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C2D7B91CBFB68C00C4E099 /* AVFoundation.framework */; };
+		51C2D7BE1CBFC7C800C4E099 /* scanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C2D7BC1CBFC7C800C4E099 /* scanViewController.m */; };
+		51C2D7C31CBFD25500C4E099 /* resultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C2D7C11CBFD25500C4E099 /* resultViewController.m */; };
+		51C2D7C61CBFE10C00C4E099 /* 滴-2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 51C2D7C51CBFE10C00C4E099 /* 滴-2.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		51C2D7A71CBFB04E00C4E099 /* CCNScanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCNScanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C2D7AB1CBFB04E00C4E099 /* CCNScanUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCNScanUITests.m; sourceTree = "<group>"; };
 		51C2D7AD1CBFB04E00C4E099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51C2D7B91CBFB68C00C4E099 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		51C2D7BB1CBFC7C800C4E099 /* scanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scanViewController.h; sourceTree = "<group>"; };
+		51C2D7BC1CBFC7C800C4E099 /* scanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = scanViewController.m; sourceTree = "<group>"; };
+		51C2D7C01CBFD25500C4E099 /* resultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resultViewController.h; sourceTree = "<group>"; };
+		51C2D7C11CBFD25500C4E099 /* resultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = resultViewController.m; sourceTree = "<group>"; };
+		51C2D7C51CBFE10C00C4E099 /* 滴-2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "滴-2.mp3"; sourceTree = "<group>"; };
+		51C2D7C71CC0B9D900C4E099 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51C2D7BA1CBFB68C00C4E099 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +95,7 @@
 		51C2D7771CBFB04D00C4E099 = {
 			isa = PBXGroup;
 			children = (
+				51C2D7B91CBFB68C00C4E099 /* AVFoundation.framework */,
 				51C2D7821CBFB04E00C4E099 /* CCNScan */,
 				51C2D79F1CBFB04E00C4E099 /* CCNScanTests */,
 				51C2D7AA1CBFB04E00C4E099 /* CCNScanUITests */,
@@ -103,15 +116,21 @@
 		51C2D7821CBFB04E00C4E099 /* CCNScan */ = {
 			isa = PBXGroup;
 			children = (
-				51C2D7861CBFB04E00C4E099 /* AppDelegate.h */,
-				51C2D7871CBFB04E00C4E099 /* AppDelegate.m */,
+				51C2D7C51CBFE10C00C4E099 /* 滴-2.mp3 */,
+				51C2D7BB1CBFC7C800C4E099 /* scanViewController.h */,
+				51C2D7BC1CBFC7C800C4E099 /* scanViewController.m */,
+				51C2D7C01CBFD25500C4E099 /* resultViewController.h */,
+				51C2D7C11CBFD25500C4E099 /* resultViewController.m */,
 				51C2D7891CBFB04E00C4E099 /* ViewController.h */,
 				51C2D78A1CBFB04E00C4E099 /* ViewController.m */,
+				51C2D7861CBFB04E00C4E099 /* AppDelegate.h */,
+				51C2D7871CBFB04E00C4E099 /* AppDelegate.m */,
 				51C2D78C1CBFB04E00C4E099 /* Main.storyboard */,
 				51C2D7921CBFB04E00C4E099 /* Assets.xcassets */,
 				51C2D7941CBFB04E00C4E099 /* LaunchScreen.storyboard */,
 				51C2D7971CBFB04E00C4E099 /* Info.plist */,
 				51C2D78F1CBFB04E00C4E099 /* CCNScan.xcdatamodeld */,
+				51C2D7C71CC0B9D900C4E099 /* PrefixHeader.pch */,
 				51C2D7831CBFB04E00C4E099 /* Supporting Files */,
 			);
 			path = CCNScan;
@@ -246,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51C2D7C61CBFE10C00C4E099 /* 滴-2.mp3 in Resources */,
 				51C2D7961CBFB04E00C4E099 /* LaunchScreen.storyboard in Resources */,
 				51C2D7931CBFB04E00C4E099 /* Assets.xcassets in Resources */,
 				51C2D78E1CBFB04E00C4E099 /* Main.storyboard in Resources */,
@@ -274,7 +294,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				51C2D78B1CBFB04E00C4E099 /* ViewController.m in Sources */,
+				51C2D7BE1CBFC7C800C4E099 /* scanViewController.m in Sources */,
 				51C2D7911CBFB04E00C4E099 /* CCNScan.xcdatamodeld in Sources */,
+				51C2D7C31CBFD25500C4E099 /* resultViewController.m in Sources */,
 				51C2D7881CBFB04E00C4E099 /* AppDelegate.m in Sources */,
 				51C2D7851CBFB04E00C4E099 /* main.m in Sources */,
 			);
@@ -419,7 +441,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CCNScan/PrefixHeader.pch";
 				INFOPLIST_FILE = CCNScan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CCN.CCNScan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -430,7 +455,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CCNScan/PrefixHeader.pch";
 				INFOPLIST_FILE = CCNScan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CCN.CCNScan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -502,6 +530,7 @@
 				51C2D7B21CBFB04E00C4E099 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51C2D7B31CBFB04E00C4E099 /* Build configuration list for PBXNativeTarget "CCNScanTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +539,7 @@
 				51C2D7B51CBFB04E00C4E099 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51C2D7B61CBFB04E00C4E099 /* Build configuration list for PBXNativeTarget "CCNScanUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +548,7 @@
 				51C2D7B81CBFB04E00C4E099 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
